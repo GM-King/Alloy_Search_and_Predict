@@ -1,0 +1,15 @@
+use_file_systems_txt: true
+target_name: price
+cutoff_PhiDelta: true
+
+#these settings only apply if use_file_systems_txt is false
+elements: *, *, *, *
+only_output_best_result: false
+target_value: 0
+
+use_exponential_increment: false
+#linear_step_size is only used if use_exponential_increment is false
+linear_step_size: 0.25
+#first_increment and number_of_concentrations is only used if use_exponential_increment is true
+first_increment: 0.0001
+number_of_concentrations: 10
