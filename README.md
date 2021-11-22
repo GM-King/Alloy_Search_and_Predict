@@ -1,6 +1,8 @@
 # Alloy_Search_and_Predict
 High-entropy alloy predictive code described in publication "King, D. J. M., Middleburgh, S. C., McGregor, A. G., &amp; Cortie, M. B. (2016). Predicting the formation and stability of single phase high-entropy alloys. Acta Materialia, 104, 172-179."
 
+This version is an early iteration of the website and is best run locally by right clicking the "CommandLineApplication.java" file in IntelliJ and selecting run. See detailed steps below:
+
 Steps for running this code.
 1. Edit the input.txt in the root directory. 
 2. "use_file_systems_txt: (true/false)" will read/not read systems.txt.
@@ -11,5 +13,3 @@ Steps for running this code.
 7. "target_value" will set the value for which "target_name" is sorted for in the output. If you are after single phase formability then i suggest "target_name: phi", "target_value: 1000".
 8. The remainder of the tags are for the concentration steps and are self explanatory. If you set them too fine e.g. you have a 5 element system and you are searching in steps of 0.01 the run will likely never finish or produce an output file terabytes in size.
 9. Once you are happy with the inputs run the CommandLineApplication.java
-
-N.B. To run this locally I use Spring Boot in the IntelliJ IDE. To host this through a browser, build and compile the code and execute .war file that was generated.
