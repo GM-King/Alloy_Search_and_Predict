@@ -1,9 +1,9 @@
-use_file_systems_txt: true
+use_file_systems_txt: false
 target_name: price
 cutoff_PhiDelta: true
 
 #these settings only apply if use_file_systems_txt is false
-elements: *, *, *, *
+elements: Co, Cr, Fe, Ni
 only_output_best_result: false
 target_value: 0
 
